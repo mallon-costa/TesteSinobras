@@ -3,6 +3,8 @@
 ## Sobre o Sistema
 
 Este projeto visa desenvolver uma aplicação básica para gerenciamento de colaboradores, com funcionalidades principais que incluem o cadastro de colaboradores, registro de ponto e geração de relatórios.
+![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/091ec101-c272-480f-b7ca-7fb284cdd779)
+
 
 A seguir são listadas algumas funcionalidades do sistema.
 
@@ -55,5 +57,13 @@ Requisitos:
     - Node 20.10.0;
     - Package Manager Npm 10.2.3;
     - PostegreSQL;
-    - 
+
+Abra o diretório Webapi e localize o arquivo "ConnectionContext.cs" dentro de /Infrastructure, na linha 12 mude "Server=postgres;" para "Server=localhost".
+![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/c37708f3-09f4-47ae-927e-7ad5f92774a2)
+
+Execute o Back-End executando o comando "dotnet run" na pasta Webapi e copie o endereço de execução apresentado no terminal.
+Abra o diretório /frontend e execute "npm install". Após isso, abra o arquivo environment.ts localizado em src/enviroments e mude o valor da variável urlApi para o endereço do Back-End da etapa anterior
+![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/83c4e5d7-12a8-49bf-904f-a0f4f5050916)
+
+Finalmente execute "ng serve" no terminal do diretório /frontend
 
