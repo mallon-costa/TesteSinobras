@@ -12,3 +12,6 @@ A seguir são listadas algumas funcionalidades do sistema.
     - Remover;
     - Atualizar.
 
+![2024-03-27 09-26-33](https://github.com/mallon-costa/TesteSinobras/assets/55391088/1068dcde-292b-4c16-836f-c4d2ecbcda23)
+
+
