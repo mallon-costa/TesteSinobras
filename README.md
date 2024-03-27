@@ -82,9 +82,14 @@ Como observado a Clean Architecture é conceito de design de software baseado em
 A separação de camadas me poupa muitos problemas futuros com a manutenção do software. A regra de dependência bem aplicada me deixa com um sistema completamente testável. Quando um framework, um banco de dados ou uma API se tornar obsoleto, a substituição de uma camada não será uma dor de cabeça para mim. Além disso, isso garante a integridade do core do projeto.
 
 Portanto, os diretórios dos arquivos estão distruidos da seguinte forma:
-![arquitetura backend](https://github.com/mallon-costa/TesteSinobras/assets/55391088/a8c21f03-15cb-4535-bec0-2d3deaac1c92)
+
+![arquitetura backend](https://github.com/mallon-costa/TesteSinobras/assets/55391088/fbdf2882-e12e-425f-a116-a3e9f015da03)
 Fonte: Autor
 
-
+Segue as seguinte vantagens de projetar o sistema com a organização apresentada:
+    - Organização Estruturada: O sistema divide claramente os componentes em quatro categorias: Domínio, Infraestrutura, Aplicação e Controladores. Isso facilita a manutenção e a colaboração entre desenvolvedores.
+    - Separação de Responsabilidades: Cada categoria tem um propósito específico. Por exemplo, o Domínio contém Modelos e DTOs, enquanto a Infraestrutura abriga Conexões de Banco de Dados e Repositórios. Essa separação ajuda a manter o código limpo e modular.
+    - Escalabilidade: A estrutura permite que você adicione ou modifique componentes sem afetar outras partes do sistema. Isso é crucial para a escalabilidade de uma API.
+    - Manutenção Simplificada: Com essa organização, é mais fácil localizar e corrigir problemas. Além disso, a clareza na estruturação ajuda novos desenvolvedores a entender o projeto mais rapidamente.
 
 
