@@ -87,6 +87,7 @@ Portanto, os diretórios dos arquivos estão distruidos da seguinte forma:
 Fonte: Autor
 
 Segue as seguinte vantagens de projetar o sistema com a organização apresentada:
+
     - Organização Estruturada: O sistema divide claramente os componentes em quatro categorias: Domínio, Infraestrutura, Aplicação e Controladores. Isso facilita a manutenção e a colaboração entre desenvolvedores.
     - Separação de Responsabilidades: Cada categoria tem um propósito específico. Por exemplo, o Domínio contém Modelos e DTOs, enquanto a Infraestrutura abriga Conexões de Banco de Dados e Repositórios. Essa separação ajuda a manter o código limpo e modular.
     - Escalabilidade: A estrutura permite que você adicione ou modifique componentes sem afetar outras partes do sistema. Isso é crucial para a escalabilidade de uma API.
