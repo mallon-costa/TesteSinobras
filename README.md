@@ -32,7 +32,19 @@ A seguir são listadas algumas funcionalidades do sistema.
 
 ![2024-03-27 09-28-27](https://github.com/mallon-costa/TesteSinobras/assets/55391088/ed9dc32b-fef3-4b34-a309-c7ad67d5bb4c)
 
+# Estruturação
 
+- Avatares: ma pasta para armazenar avatares de usuários.
+- bin: contém arquivos binários e executáveis do projeto.
+- Database: contém arquivos relacionados ao banco de dados, como scripts SQL.
+- frontend: essa pasta contém o código-fonte do frontend do aplicativo.
+- docker-compose.override.yml: arquivo de configuração do Docker Compose para substituir valores padrão.
+- docker-compose.yml: arquivo de configuração principal do Docker Compose.
+- employee.sql: um script SQL para criar tabelas e inserir dados no banco de dados.
+- launchSettings.json: configurações de lançamento para depuração.
+- README.md: arquivo de documentação.
+- Webapi.sln: Arquivo de solução do Visual Studio relacionado à API da web.
+- Webapi: arquivos e pastas relacionados à API da web.
 
 ## Instalação
 
