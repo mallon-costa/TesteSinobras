@@ -10,8 +10,6 @@ using Webapi.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
 
 builder.Services.AddAutoMapper(typeof(DomainToDTOMapping));
@@ -61,7 +59,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: "MyPolicy",
         policy =>
         {
-            policy.WithOrigins("http://localhost:8080", "http://localhost:4200")
+            policy.WithOrigins("http://localhost:8080", "http://localhost:4200", "http://localhost:5000")
             .AllowAnyHeader()
             .AllowAnyMethod();
         });

@@ -10,8 +10,8 @@ namespace Webapi.Infrastructure
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
           => optionsBuilder.UseNpgsql(
-              "Server=localhost;" +
-              "Port=5432;Database=employee_sample;" +
+              "Server=postgres;" +
+              "Port=5432;Database=system_employee;" +
               "User Id=postgres;" +
               "Password=123;");
     }

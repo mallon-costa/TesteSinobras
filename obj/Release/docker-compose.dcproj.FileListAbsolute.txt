@@ -1,0 +1,1 @@
+C:\Users\mallo\OneDrive\Documents\Teste Sinobras\Webapi\obj\Release\docker-compose.dcproj.CoreCompileInputs.cache

@@ -16,8 +16,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\mallo\OneDrive\Documents\Teste 02\Webapi\Webapi:/app
-      - C:\Users\mallo\OneDrive\Documents\Teste 02\Webapi:/src
+      - C:\Users\mallo\OneDrive\Documents\Teste Sinobras\Webapi\Webapi:/app
+      - C:\Users\mallo\OneDrive\Documents\Teste Sinobras\Webapi:/src
       - C:\Users\mallo\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\mallo\.nuget\packages\:/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

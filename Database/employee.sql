@@ -1,6 +1,6 @@
-CREATE DATABASE employee_sample;
+CREATE DATABASE system_employee;
 
-\c employee_sample;
+\c system_employee;
 
 /* CREATE TABLE "employee" (
     id SERIAL PRIMARY KEY,
@@ -31,7 +31,3 @@ CREATE TABLE IF NOT EXISTS public.attendance
     "exitTime" timestamp with time zone,
     CONSTRAINT "PK_attendance" PRIMARY KEY (id)
 );
-
-INSERT INTO public.employee (id, name, age, registration, position, salary, photo)
-VALUES  (9, 'Manoel Malon Costa de Moura', 23, 252411, 'Engenheiro', 2400, 'Storage\00038-50-removebg-preview.png'),
-        (42, 'Amanda de Castro Souza', 26, 15154, 'Estagiária', 3200, 'Storage\00010-45-removebg-preview.png');
