@@ -1,6 +1,6 @@
-CREATE DATABASE employee_sample;
+CREATE DATABASE system_employee;
 
-\c employee_sample;
+\c system_employee;
 
 /* CREATE TABLE "employee" (
     id SERIAL PRIMARY KEY,
@@ -30,4 +30,4 @@ CREATE TABLE IF NOT EXISTS public.attendance
     "entryTime" timestamp with time zone NOT NULL,
     "exitTime" timestamp with time zone,
     CONSTRAINT "PK_attendance" PRIMARY KEY (id)
-)
+);

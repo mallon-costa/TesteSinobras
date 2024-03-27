@@ -13,3 +13,21 @@
     margin-top: 20px;
     width: 80%;
 }
+
+.card-functionalities {
+    padding: 10px; 
+    margin-bottom: 20px;
+}
+
+.items-spaced {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.frame-video {
+    border-radius: 10px;
+}
+
+.title-functionalities{
+    font-size: 18px;
+}

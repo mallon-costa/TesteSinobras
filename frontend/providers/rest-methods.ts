@@ -29,7 +29,7 @@ export class RestMethods {
       return status;
     } catch (error) {
       console.error('Error al realizar la solicitud:', error);
-      throw error; // Puedes manejar el error según tus necesidades
+      throw error; 
     }
   }
 

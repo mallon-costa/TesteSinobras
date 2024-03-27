@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "umfZZYTy4GmdRCMCTp0vRqNkfELvKKLuDcvEGMZkYpQ/6kh5sCLuha275aKbIes/4fbA/kL+KEVMDXJbCZ7yaw==",
+  "dgSpecHash": "ormaXRddor5/qDWbFkp7gwXBPBkG7W4+BkXgMVSV/Nfc6WS8zB34A/VHel63SLD37jTYW2tESc9Y7seFM1AAGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mallo\\OneDrive\\Documents\\Teste 02\\Webapi\\Webapi\\Webapi.csproj",
+  "projectFilePath": "C:\\Users\\mallo\\OneDrive\\Documents\\Teste Sinobras\\Webapi\\Webapi\\Webapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mallo\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\mallo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -4,14 +4,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { RestMethods } from '../../../providers/rest-methods';
-import {MatSnackBar} from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-register-point',
   standalone: true,
-  imports: [MatIconModule, MatButtonModule, MatCardModule, CommonModule, NgxPaginationModule ],
+  imports: [MatIconModule, MatButtonModule, MatCardModule, CommonModule, NgxPaginationModule],
   templateUrl: './register-point.component.html',
   styleUrl: './register-point.component.css'
 })
@@ -19,9 +19,9 @@ export class RegisterPointComponent {
   attendances: any;
   collaborators: any;
   currentDate: Date = new Date();
-  imageSrcMap: Map<number, string> = new Map<number, string>(); 
+  imageSrcMap: Map<number, string> = new Map<number, string>();
 
-  public currentPage = 1; 
+  public currentPage = 1;
   public itemsPerPage = 5;
 
   constructor(
@@ -40,13 +40,16 @@ export class RegisterPointComponent {
       this.attendances = this.collaborators
         .filter((attendance: { attendance: any; }) => attendance.attendance)
         .map((attendance: { attendance: any; }) => attendance.attendance);
-      
-      console.log(this.collaborators)
+
       this.preloadImages();
     }
   }
 
-  async registerEntry(collaborator: any){
+  async registerEntry(collaborator: any) {
+    if (!this.checksDayAndSchedule()) {
+      return;
+    }
+
     const url = `${environment.urlApi}/api/v1/attendance/entry/${collaborator.employeeId}`
     const status = await this.rest.postData(url);
     if (status === 200) {
@@ -57,10 +60,15 @@ export class RegisterPointComponent {
     }
   }
 
-  async registerExit(collaborator: any){
+  async registerExit(collaborator: any) {
+
+    if (!this.checksDayAndSchedule()) {
+      return;
+    }
+
     const url = `${environment.urlApi}/api/v1/attendance/exit/${collaborator.employeeId}`
 
-    if(!collaborator.hasEntryToday){
+    if (!collaborator.hasEntryToday) {
       this.openSnackBar("Registre a entrada primeiro", "Erro");
       return;
     }
@@ -72,6 +80,22 @@ export class RegisterPointComponent {
     } else {
       this.openSnackBar("Saída não registrada", "Erro");
     }
+  }
+
+  checksDayAndSchedule() {
+    const today = new Date().getDay();
+    const currentHour = new Date().getHours();
+
+    if (today === 0 || today === 6) {
+      this.openSnackBar("Entrada não registrada - Fim de semana", "Erro");
+      return false;
+    }
+
+    if (currentHour < 8 || currentHour >= 18) {
+      this.openSnackBar("Entrada não registrada - Fora do horário", "Erro");
+      return false;
+    }
+    return true;
   }
 
   async preloadImages() {

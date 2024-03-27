@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Products.Api.Extensions;
 using System.Text;
 using Webapi;
 using Webapi.Application.Mapping;
@@ -10,8 +9,6 @@ using Webapi.Infrastructure;
 using Webapi.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
 
 builder.Services.AddControllers();
 
@@ -62,7 +59,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: "MyPolicy",
         policy =>
         {
-            policy.WithOrigins("http://localhost:8080", "http://localhost:4200")
+            policy.WithOrigins("http://localhost:8080", "http://localhost:4200", "http://localhost:5000")
             .AllowAnyHeader()
             .AllowAnyMethod();
         });
