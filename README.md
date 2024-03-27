@@ -17,7 +17,7 @@ A seguir são listadas algumas funcionalidades do sistema.
 ![2024-03-27 09-26-33](https://github.com/mallon-costa/TesteSinobras/assets/55391088/1068dcde-292b-4c16-836f-c4d2ecbcda23)
 
 
-2. **Colaboradores:**
+2. **Registrar Ponto:**
     - Registrar entrada (somente horário comercial);
     - Registrar saída (somente horário comercial);
     - Verificar se já houve registro hoje.
@@ -71,6 +71,7 @@ Finalmente execute "ng serve" no terminal do diretório /frontend e abra o ender
 1. **Back-End**
 A arquitetura utilizada foi baseada na Clean Architecture desenvolvida por Robert C. Martin, com o objetivo de organizar o código para encapsular a lógica de negócios, mas manter separado do mecanismo de entrega.
 ![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/044b6e23-ed45-4ebb-bb11-b866e1d09fe0)
+
 Fonte: https://medium.com/luizalabs/descomplicando-a-clean-architecture-cf4dfc4a1ac6
 
 Como observado a Clean Architecture é conceito de design de software baseado em camadas. Dentre as vantagens de utilizar esse modelo, podemos citar:
@@ -84,7 +85,7 @@ A separação de camadas me poupa muitos problemas futuros com a manutenção do
 Portanto, os diretórios dos arquivos estão distruidos da seguinte forma:
 
 ![arquitetura backend](https://github.com/mallon-costa/TesteSinobras/assets/55391088/fbdf2882-e12e-425f-a116-a3e9f015da03)
-Fonte: Autor
+Fonte: Autor.
 
 Segue as seguinte vantagens de projetar o sistema com a organização apresentada:
 
