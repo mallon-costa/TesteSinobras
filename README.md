@@ -1,5 +1,10 @@
 # Sistema de Gerenciamento de Colaboradores - Teste de Analista Júnior / Sinobras
 
+## Candidato
+**Manoel Malon Costa de Moura**
+
+**Email: malloncosta@outlook.com**
+
 ## Sobre o Sistema
 
 Este projeto visa desenvolver uma aplicação básica para gerenciamento de colaboradores, com funcionalidades principais que incluem o cadastro de colaboradores, registro de ponto e geração de relatórios.
@@ -33,7 +38,7 @@ A seguir são listadas algumas funcionalidades do sistema.
 ![2024-03-27 09-28-27](https://github.com/mallon-costa/TesteSinobras/assets/55391088/ed9dc32b-fef3-4b34-a309-c7ad67d5bb4c)
 
 # Estruturação
-
+O diretório raiz do projeto é organizado da seguinte forma:
 - Avatares: ma pasta para armazenar avatares de usuários.
 - bin: contém arquivos binários e executáveis do projeto.
 - Database: contém arquivos relacionados ao banco de dados, como scripts SQL.
@@ -45,6 +50,36 @@ A seguir são listadas algumas funcionalidades do sistema.
 - README.md: arquivo de documentação.
 - Webapi.sln: Arquivo de solução do Visual Studio relacionado à API da web.
 - Webapi: arquivos e pastas relacionados à API da web.
+
+
+## Ferramentas Utilizadas
+
+1. Asp.Net 8.0: framework de desenvolvimento web, criado pela Microsoft, que permite a construção de aplicativos e sites dinâmicos e interativos. Baseado na plataforma .NET, o ASP.NET oferece uma ampla gama de ferramentas e recursos para o desenvolvimento rápido e eficiente de aplicações web, incluindo suporte para linguagens de programação como C# e Visual Basic. Ele utiliza o modelo de programação baseado em eventos, onde os desenvolvedores podem criar componentes reutilizáveis e interagir com o ciclo de vida da página web. Além disso, o ASP.NET oferece recursos avançados de segurança, gerenciamento de sessão, manipulação de dados e integração com outras tecnologias da Microsoft, tornando-o uma escolha popular para o desenvolvimento de aplicações web escaláveis e seguras.
+
+![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/a3a8a638-249b-4a6c-8ba2-b68c25868294)
+
+Fonte: https://www.dialhost.com.br/ajuda/asp-net-upload-de-arquivos/
+
+
+2. PostgreSQL 16.2: é um poderoso sistema de gerenciamento de banco de dados relacional de código aberto. Ele oferece uma ampla gama de recursos avançados e é conhecido por sua confiabilidade, escalabilidade e conformidade com os padrões do setor. Permite armazenar, recuperar, manipular e analisar grandes volumes de dados de forma eficiente. Além disso, ele suporta consultas complexas, transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade), replicação de dados, integridade referencial e extensibilidade através de funções e procedimentos armazenados. Sua natureza de código aberto incentiva a comunidade a contribuir para seu aprimoramento contínuo, tornando-o uma escolha popular para aplicações de missão crítica em diversos setores.
+![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/27b11e8b-8253-4f9f-9ac8-8fc53191f69e)
+Fonte: https://www.driven.com.br/blog/postgre-sql/
+
+3. Angular 13.7.1: é um framework de desenvolvimento front-end mantido pelo Google, projetado para criar aplicativos web de página única (SPAs) escaláveis e dinâmicos. Utilizando a linguagem TypeScript, Angular oferece uma arquitetura baseada em componentes, onde cada parte da interface do usuário é encapsulada em componentes reutilizáveis. Além disso, fornece recursos poderosos, como injeção de dependência, roteamento, validação de formulários, comunicação com servidor por meio de HTTP, entre outros. A abordagem de two-way data binding facilita a sincronização automática entre o modelo e a visualização, proporcionando uma experiência de desenvolvimento mais fluida. Com uma vasta comunidade de desenvolvedores e uma documentação abrangente, Angular é uma escolha popular para a construção de aplicações web modernas e robustas.
+![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/d09a9418-72da-4afa-994b-4a0083d81e4a)
+Fonte: https://www.infoq.com/news/2024/01/angular-17-new-branding/
+
+4. Visual Studio 2022: ambiente de desenvolvimento integrado (IDE) desenvolvido pela Microsoft, utilizado principalmente para criar aplicativos de software para plataformas Windows, Android, iOS e web. Ele oferece uma ampla gama de recursos, incluindo suporte para várias linguagens de programação, como C#, Visual Basic, C++, Python e JavaScript, facilitando o desenvolvimento de aplicativos em diversos contextos. O Visual Studio oferece ferramentas de edição de código avançadas, depuração, compilação e integração com controle de versão, proporcionando aos desenvolvedores um ambiente de desenvolvimento completo e eficiente. Além disso, possui extensibilidade, permitindo aos desenvolvedores personalizarem e estenderem o IDE de acordo com suas necessidades específicas, tornando-o uma escolha popular entre os profissionais de desenvolvimento de software.
+![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/87144a0d-57ba-448d-a36b-81b19121e31c)
+Fonte: https://venturebeat.com/business/microsoft-launches-visual-studio-online-public-preview-and-ml-net-1-4/
+
+5. Stable Diffusion 2.7: o Stable Diffusion é uma técnica de geração de imagens por meio de inteligência artificial (IA). É baseado em um modelo de aprendizado de máquina conhecido como Diffusion Probabilistic Models, que permite a criação de imagens realistas e de alta qualidade. A "difusão" refere-se ao processo de aplicação de uma série de passos iterativos para gerar uma imagem. O termo "estável" indica que o modelo é capaz de manter a estabilidade ao longo desses passos, evitando o colapso ou a perda de detalhes importantes durante o processo de geração. O Stable Diffusion utiliza uma técnica chamada sampling, que envolve a amostragem de uma distribuição de probabilidade para cada pixel da imagem, de forma a garantir que a imagem gerada seja realista e coerente com as características aprendidas pelo modelo.
+
+![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/d7331bf6-e0bd-4d84-9181-a70aed12724c)
+
+Fonte: https://usnwb.com/stable-diffusion/
+
+
 
 ## Instalação
 
