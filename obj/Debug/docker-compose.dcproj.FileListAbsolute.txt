@@ -26,3 +26,4 @@ C:\Users\mallo\OneDrive\Documents\Teste 02\Webapi\bin\Debug\Microsoft.IdentityMo
 C:\Users\mallo\OneDrive\Documents\Teste 02\Webapi\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\mallo\OneDrive\Documents\Teste 02\Webapi\bin\Debug\Npgsql.dll
 C:\Users\mallo\OneDrive\Documents\Teste 02\Webapi\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\mallo\OneDrive\Documents\Teste Sinobras\Webapi\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

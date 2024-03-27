@@ -39,11 +39,7 @@ export class RegisterComponent {
   selectedFile: File | null = null;
   urlParams: any;
   collaboratorData: any;
-
-  onFileSelected(event: any) {
-    this.selectedFile = event.target.files[0];
-    console.log(this.selectedFile)
-  }
+  forminvalid = true;
 
   constructor(
     public formBuilder: FormBuilder,
@@ -61,12 +57,9 @@ export class RegisterComponent {
     })
 
     this.urlParams = this.activatedRoute.snapshot.queryParams;
-    console.log(this.urlParams)
-
     this.collaboratorData = localStorage.getItem('collaborator');
 
     if(this.urlParams.update === "true" && this.collaboratorData){
-      console.log('entrou na função')
       const collaborator = JSON.parse(this.collaboratorData);
       this.formRegister = this.formBuilder.group({
         full_name: [collaborator.name, [Validators.required, Validators.minLength(2)]],
@@ -77,6 +70,11 @@ export class RegisterComponent {
         photo: [collaborator.photo, [Validators.required]]
       })
     }
+  }
+
+  onFileSelected(event: any) {
+    this.selectedFile = event.target.files[0];
+    this.releaseSubmit();
   }
 
   async submitForm() {
@@ -91,11 +89,10 @@ export class RegisterComponent {
     if (this.selectedFile !== null) {
       formData.append('Photo', this.selectedFile);
     }  
-    this.enviarRequisicao(formData);
+    this.sendRequest(formData);
   }  
 
-
-  async enviarRequisicao(formData: FormData) {
+  async sendRequest(formData: FormData) {
 
       try {
         const requestOptions = {
@@ -140,5 +137,23 @@ export class RegisterComponent {
     });
   }
 
+  releaseSubmit(){
+    if (
+      this.formRegister.value['full_name'] !== '' &&
+      this.formRegister.value['position'] !== '' &&
+      this.formRegister.value['age'] !== null &&
+      this.formRegister.value['age'] !== '' &&
+      this.formRegister.value['salary'] !== null &&
+      this.formRegister.value['salary'] !== '' &&
+      this.formRegister.value['register'] !== '' &&
+      this.formRegister.value['register'] !== null &&
+      this.selectedFile !== null &&
+      this.selectedFile !== undefined
+    ) {
+      this.forminvalid = false;
+    } else {
+      this.forminvalid = true;
+    }
+  }
 
 }

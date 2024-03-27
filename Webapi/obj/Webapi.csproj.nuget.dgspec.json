@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mallo\\OneDrive\\Documents\\Teste 02\\Webapi\\Webapi\\Webapi.csproj": {}
+    "C:\\Users\\mallo\\OneDrive\\Documents\\Teste Sinobras\\Webapi\\Webapi\\Webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mallo\\OneDrive\\Documents\\Teste 02\\Webapi\\Webapi\\Webapi.csproj": {
+    "C:\\Users\\mallo\\OneDrive\\Documents\\Teste Sinobras\\Webapi\\Webapi\\Webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mallo\\OneDrive\\Documents\\Teste 02\\Webapi\\Webapi\\Webapi.csproj",
+        "projectUniqueName": "C:\\Users\\mallo\\OneDrive\\Documents\\Teste Sinobras\\Webapi\\Webapi\\Webapi.csproj",
         "projectName": "Webapi",
-        "projectPath": "C:\\Users\\mallo\\OneDrive\\Documents\\Teste 02\\Webapi\\Webapi\\Webapi.csproj",
+        "projectPath": "C:\\Users\\mallo\\OneDrive\\Documents\\Teste Sinobras\\Webapi\\Webapi\\Webapi.csproj",
         "packagesPath": "C:\\Users\\mallo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mallo\\OneDrive\\Documents\\Teste 02\\Webapi\\Webapi\\obj\\",
+        "outputPath": "C:\\Users\\mallo\\OneDrive\\Documents\\Teste Sinobras\\Webapi\\Webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mallo\\AppData\\Roaming\\NuGet\\NuGet.Config",

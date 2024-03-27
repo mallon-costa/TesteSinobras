@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Products.Api.Extensions;
 using System.Text;
 using Webapi;
 using Webapi.Application.Mapping;
