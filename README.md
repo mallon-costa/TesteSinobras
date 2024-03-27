@@ -106,8 +106,10 @@ Requisitos:
     - PostegreSQL 16.2;
 
 Primeiramente, entre dentro do diretório /Database e execute o seguinte comando no terminal para criar seu banco de dados:
+
 psql -U postgres -d system_employee -f employee.sql
-ou se preferir, pode usar docker compose no diretório /Database para subir o banco de dados pronto
+
+ou se preferir, pode usar docker compose (através do comando "docker compose up --build) no diretório /Database para subir o banco de dados pronto
 
 Abra o diretório Webapi e localize o arquivo "ConnectionContext.cs" dentro de /Infrastructure, na linha 12 mude "Server=postgres;" para "Server=localhost".
 ![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/c37708f3-09f4-47ae-927e-7ad5f92774a2)
