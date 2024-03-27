@@ -93,4 +93,39 @@ Segue as seguinte vantagens de projetar o sistema com a organização apresentad
     - Escalabilidade: A estrutura permite que você adicione ou modifique componentes sem afetar outras partes do sistema. Isso é crucial para a escalabilidade de uma API.
     - Manutenção Simplificada: Com essa organização, é mais fácil localizar e corrigir problemas. Além disso, a clareza na estruturação ajuda novos desenvolvedores a entender o projeto mais rapidamente.
 
+2. **Front-End**
+A estrutura de pastas utilizada foi simples, baseando-se no modelo padrão do angular:
 
+    - obj
+    - providers
+    - node_modules
+    - src
+        - app
+            - about
+            - collaborators
+            - home
+            - register
+            - register-point
+            - report
+            - app.component.css
+            - app.component.html
+            - app.component.spec.ts
+            - app.component.ts
+            - app.config.ts
+        - assets
+        - environments
+        - favicon.ico
+        - index.html
+        - main.ts
+        - styles.css
+    - .editorconfig
+    - angular.json
+    - Dockerfile
+    - package.json
+    - package-lock.json
+
+Em que:
+    - /providers contém funções de requisições http; 
+    - /assets contém as imagens utilizadas no projeto;
+    - /environments contém os arquivos que contém as variáveis de ambiente;
+    - /app contém as páginas e os componentes do sistema.
