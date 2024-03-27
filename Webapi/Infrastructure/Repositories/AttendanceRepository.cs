@@ -66,13 +66,13 @@ namespace Webapi.Infrastructure.Repositories
 
         public bool HasEntryToday(int employeeId)
         {
-            DateTime currentDateUTC = DateTime.UtcNow.Date; // Obtém a data atual em UTC
+            DateTime currentDateUTC = DateTime.UtcNow.Date;
             return _context.Attendances.Any(a => a.employeeId == employeeId && a.date.ToUniversalTime().Date == currentDateUTC);
         }
 
         public bool HasExitToday(int employeeId)
         {
-            DateTime currentDateUTC = DateTime.UtcNow.Date; // Obtém a data atual em UTC
+            DateTime currentDateUTC = DateTime.UtcNow.Date;
             return _context.Attendances.Any(a => a.employeeId == employeeId && a.date.ToUniversalTime().Date == currentDateUTC && a.exitTime != null);
         }
 

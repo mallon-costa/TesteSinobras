@@ -36,7 +36,6 @@ export class CollaboratorsComponent {
     if (status === 200) {
       this.collaborators = response;
       this.preloadImages();
-      console.log(this.collaborators)
     }
   }
 
@@ -44,7 +43,6 @@ export class CollaboratorsComponent {
     const url = `${environment.urlApi}/api/v1/employee/delete/${id}`
     const status = await this.rest.deleteData(url);
     if (status === 200) {
-      console.log("apagado com sucesso")
       this.getCollaborators();
     }
   }

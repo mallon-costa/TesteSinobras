@@ -40,8 +40,7 @@ export class RegisterPointComponent {
       this.attendances = this.collaborators
         .filter((attendance: { attendance: any; }) => attendance.attendance)
         .map((attendance: { attendance: any; }) => attendance.attendance);
-      
-      console.log(this.collaborators)
+            
       this.preloadImages();
     }
   }

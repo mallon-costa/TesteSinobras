@@ -11,13 +11,13 @@
                     <mat-hint>MM/YYYY</mat-hint>
                     <mat-datepicker-toggle matIconSuffix [for]="dp"></mat-datepicker-toggle>
                     <mat-datepicker #dp startView="multi-year" (monthSelected)="setMonthAndYear($event, dp)"
-                        panelClass="example-month-picker">
+                        panelClass="month-picker">
                     </mat-datepicker>
                 </mat-form-field>
             </div>
 
-            <div *ngIf="collaborators" style="text-align: right; margin-right: 20px;">
-                <canvasjs-chart [options]="chartOptions" [styles]="{width: '400px', height:'200px'}"></canvasjs-chart>
+            <div (keyup)="releaseData()" *ngIf="showgraphic" style="text-align: right; margin-right: 20px;">
+                <canvasjs-chart [options]="chartOptions" [styles]="{width: '400px', height:'250px'}"></canvasjs-chart>
             </div>
         </div>
 
@@ -32,7 +32,7 @@
                             <mat-card-subtitle> <strong>Cargo:</strong> {{collaborator.position}}</mat-card-subtitle>
                             <mat-card-subtitle> <strong>Matrícula:</strong>
                                 {{collaborator.registration}}</mat-card-subtitle>
-                            <mat-card-subtitle> <strong>Salário:</strong> R${{collaborator.salary}}</mat-card-subtitle>
+                            <mat-card-subtitle> <strong>Salário:</strong> R${{collaborator.salary}},00</mat-card-subtitle>
                         </mat-card-title-group>
                     </mat-card-header>
                     <mat-card-content>

@@ -62,6 +62,7 @@ export class ReportComponent {
   public itemsPerPage = 5;
   data: { label: string, y: number }[] = [];
   chartOptions: any;
+  showgraphic = false;
 
   constructor(
     private rest: RestMethods,
@@ -73,6 +74,7 @@ export class ReportComponent {
     ctrlValue.month(normalizedMonthAndYear.month());
     ctrlValue.year(normalizedMonthAndYear.year());
     this.date.setValue(ctrlValue);
+    this.showgraphic = false;
     datepicker.close();
 
     const year = normalizedMonthAndYear.year();
@@ -86,24 +88,8 @@ export class ReportComponent {
     const [status, response] = await this.rest.getData(url);
     if (status === 200) {
       this.collaborators = response;
-      console.log(response)
-      this.calculatePercentagesWorked();
-
-      this.chartOptions = {
-        animationEnabled: true,
-        theme: "ligth",
-        exportEnabled: false,
-        title: {
-          text: "Horas Totais Trabalhadas"
-        },
-        subtitles: [{
-          text: "Horas por mês"
-        }],
-        data: [{
-          type: "column",
-          dataPoints: this.data
-        }]
-      }
+      this.showgraphic = true;
+      this.calculatePercentagesWorked(this.collaborators);
       this.preloadImages();
     }
   }
@@ -182,11 +168,33 @@ export class ReportComponent {
 }
 
 
-calculatePercentagesWorked(): void {
-    this.collaborators.forEach((employee: { attendance: any[]; name: any; }) => {
+calculatePercentagesWorked(collaborators: any): void {
+  this.data = []
+    collaborators.forEach((employee: { attendance: any[]; name: any; }) => {
       const percentageworked = this.calculatePercentageWorked(employee.attendance);
       this.data.push({ label: employee.name, y: percentageworked });
     });
+
+    this.releaseData();
+
+  }
+
+  releaseData(){
+    this.chartOptions = {
+      animationEnabled: true,
+      theme: "ligth",
+      exportEnabled: false,
+      title: {
+        text: "Horas Totais Trabalhadas"
+      },
+      subtitles: [{
+        text: "Horas por mês"
+      }],
+      data: [{
+        type: "column",
+        dataPoints: this.data
+      }]
+    }
   }
 
 }
