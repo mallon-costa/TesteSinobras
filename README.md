@@ -35,6 +35,11 @@ A seguir são listadas algumas funcionalidades do sistema.
 ## Instalação
 
 1. **Docker Compose + Visual Studio (Recomendada)**
+Requisitos:
+    - Docker;
+    - Docker Compose;
+    - Visual Studio Community, Professional ou Entreprise.
+
 Com o docker e o docker instalado na sua máquina, basta executar o arquivo Webapi.sln com o Visual Studio ou abrir o diretório raiz do projeto com o Visual Studio e clicar no botão **Docker compose**, como demonstrado abaixo. Se tudo dê certo, será recebido com uma tela de boas vindas ao acessar http://localhost:4200
 
 ![2024-03-27 14-08-23](https://github.com/mallon-costa/TesteSinobras/assets/55391088/26bddde4-fe3c-4b6c-8882-caafe84eec9b)
@@ -44,4 +49,11 @@ Com o docker e o docker instalado na sua máquina, basta executar o arquivo Weba
     - Banco de Dados = Porta: 5432, Senha: 123, Nome: system_employee, User: postgres
 
 2. **Instalação Local**
-É possível realiazar a instalação local também
+Requisitos:
+    - ASP.NET Core 8.0;
+    - Angular CLI 17.3.1;
+    - Node 20.10.0;
+    - Package Manager Npm 10.2.3;
+    - PostegreSQL;
+    - 
+
