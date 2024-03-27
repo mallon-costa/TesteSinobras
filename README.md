@@ -65,5 +65,26 @@ Execute o Back-End executando o comando "dotnet run" na pasta Webapi e copie o e
 Abra o diretório /frontend e execute "npm install". Após isso, abra o arquivo environment.ts localizado em src/enviroments e mude o valor da variável urlApi para o endereço do Back-End da etapa anterior
 ![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/83c4e5d7-12a8-49bf-904f-a0f4f5050916)
 
-Finalmente execute "ng serve" no terminal do diretório /frontend
+Finalmente execute "ng serve" no terminal do diretório /frontend e abra o endereço http://localhost:4200 no seu navegador.
+
+## Arquitetura
+1. **Back-End**
+A arquitetura utilizada foi baseada na Clean Architecture desenvolvida por Robert C. Martin, com o objetivo de organizar o código para encapsular a lógica de negócios, mas manter separado do mecanismo de entrega.
+![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/044b6e23-ed45-4ebb-bb11-b866e1d09fe0)
+Fonte: https://medium.com/luizalabs/descomplicando-a-clean-architecture-cf4dfc4a1ac6
+
+Como observado a Clean Architecture é conceito de design de software baseado em camadas. Dentre as vantagens de utilizar esse modelo, podemos citar:
+    - Testável. As regras de negócios podem ser testadas sem a interface do usuário, banco de dados, servidor ou qualquer outro elemento externo;
+    - Independente da interface do usuário. A interface do usuário pode mudar facilmente, sem alterar o restante do sistema. Uma UI da Web pode ser substituída por uma UI do console, por exemplo, sem alterar as regras de negócios;
+    - Independente de banco de dados. Você pode trocar o Oracle ou SQL Server, por Mongo, BigTable, CouchDB ou qualquer outro. Suas regras de negócios não estão vinculadas ao banco de dados;
+    - Independente de qualquer agente externo. Na verdade, suas regras de negócios simplesmente não sabem nada sobre o mundo exterior, não estão ligadas a nenhum Framework.
+
+A separação de camadas me poupa muitos problemas futuros com a manutenção do software. A regra de dependência bem aplicada me deixa com um sistema completamente testável. Quando um framework, um banco de dados ou uma API se tornar obsoleto, a substituição de uma camada não será uma dor de cabeça para mim. Além disso, isso garante a integridade do core do projeto.
+
+Portanto, os diretórios dos arquivos estão distruidos da seguinte forma:
+![arquitetura backend](https://github.com/mallon-costa/TesteSinobras/assets/55391088/a8c21f03-15cb-4535-bec0-2d3deaac1c92)
+Fonte: Autor
+
+
+
 
