@@ -130,3 +130,27 @@ Em que:
     - /assets contém as imagens utilizadas no projeto;
     - /environments contém os arquivos que contém as variáveis de ambiente;
     - /app contém as páginas e os componentes do sistema.
+
+As vantagens de usar essa arquitetura são:
+
+    - Organização Clara: Os arquivos estão bem organizados, tornando fácil para os desenvolvedores encontrar o que precisam.
+    - Separação de Responsabilidades: Os componentes, serviços e outros arquivos estão separados em suas próprias pastas, promovendo uma separação clara de responsabilidades.
+    - Facilita a Colaboração: Vários desenvolvedores podem trabalhar em diferentes partes do aplicativo sem interferir uns nos outros.
+Portanto, essa estrutura promove uma arquitetura limpa e eficiente para o desenvolvimento de aplicativos Angular.
+
+3. **Banco de Dados**
+Para a construção do banco de dados foi necessário somente duas tabelas, uma para os colaboradores e outra para registrar os pontos de cada um.
+
+![drawSQL-image-export-2024-03-27 (1)](https://github.com/mallon-costa/TesteSinobras/assets/55391088/1ae47ed0-f169-4e75-a418-54f452b3cda8)
+Fonte: Autor.
+
+Contém informações básicas de cada colaborador e também um campo para armazenar o caminho de foto de cada um. Este armazenamento por sua vez é feito na própria API Asp.Net usando um diretório exclusivo. Perceba que a relação é de 1 para muitos, ou seja, um colaborador pode contém vários registros de pontos correspondentes a cada dia útil do mês. Basta, portanto, os métodos para manipular essas informações, tais como listar os registros de cada colaborador a cada mês e verificar se já houve registro no dia atual.
+Todos os campos apresentados da tabela employee são obrigatórios para preenchimento.
+
+## Avatares
+No diretório raiz do sistema, existe uma pasta denominada "/Avatares" que armazena imagens PNG geradas por Inteligência Artificial, produzidas pelo proprietário utilizando a ferramenta de geração de imagens Stable Diffusion. Essas imagens são geradas com o objetivo de simplificar a seleção de avatares para cada colaborador, ao mesmo tempo em que garantem a proteção dos direitos autorais em caso de uso por terceiros.
+
+![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/05ecf45b-2b80-42ab-9daf-82881b9deef5)
+Fonte: Autor.
+
+
