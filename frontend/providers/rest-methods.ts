@@ -11,11 +11,6 @@ export class RestMethods {
       'Content-Type': 'application/json',
     };
 
-    /* const token = localStorage.getItem('TokenUser');
-    if (token) {
-      headers['Authorization'] = 'Token ' + token;
-    } */
-
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -24,11 +19,9 @@ export class RestMethods {
       });
 
       const status = await response.status;
-      //const result = await response.json();
-      //return [status, result];
       return status;
     } catch (error) {
-      console.error('Error al realizar la solicitud:', error);
+      console.error('Error in making the request:', error);
       throw error; 
     }
   }
@@ -37,11 +30,6 @@ export class RestMethods {
     const headers: any = {
       'Content-Type': 'application/json',
     };
-
-    /* const token = localStorage.getItem('TokenUser');
-    if (token) {
-      headers['Authorization'] = 'Token ' + token;
-    } */
 
     const response = await fetch(url, {
       method: 'PUT',
@@ -58,11 +46,6 @@ export class RestMethods {
     const headers: any = {};
     headers['Content-Type'] = 'application/json';
 
-    /* const token = localStorage.getItem('TokenUser');
-    if (token !== 'undefined' && token !== null && token !== '') {
-      headers['Authorization'] = 'Token ' + token;
-    } */
-
     const response = await fetch(url, {
       method: 'GET',
       headers,
@@ -74,12 +57,6 @@ export class RestMethods {
 
   async deleteData(url: string) {
     const headers: any = {};
-
-    /* const token = localStorage.getItem('TokenUser');
-    headers['Content-Type'] = 'application/json';
-    if (token !== 'undefined' && token !== null && token !== '') {
-      headers['Authorization'] = 'Token ' + token;
-    }  */
 
     const response = await fetch(url, {
       method: 'DELETE',
