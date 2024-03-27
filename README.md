@@ -35,4 +35,13 @@ A seguir são listadas algumas funcionalidades do sistema.
 ## Instalação
 
 1. **Docker Compose + Visual Studio (Recomendada)**
+Com o docker e o docker instalado na sua máquina, basta executar o arquivo Webapi.sln com o Visual Studio ou abrir o diretório raiz do projeto com o Visual Studio e clicar no botão **Docker compose**, como demonstrado abaixo. Se tudo dê certo, será recebido com uma tela de boas vindas ao acessar http://localhost:4200
 
+![2024-03-27 14-08-23](https://github.com/mallon-costa/TesteSinobras/assets/55391088/26bddde4-fe3c-4b6c-8882-caafe84eec9b)
+
+    - Front-End = http://localhost:4200
+    - Back-End = http://localhost:5000
+    - Banco de Dados = Porta: 5432, Senha: 123, Nome: system_employee, User: postgres
+
+2. **Instalação Local**
+É possível realiazar a instalação local também
