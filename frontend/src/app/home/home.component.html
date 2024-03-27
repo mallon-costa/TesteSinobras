@@ -11,33 +11,71 @@
             </p>
             <p>A seguir é listado as principais funcionalidades</p>
 
-            <div style="display: flex; justify-content: space-between;">
 
-                <div>
-                    <tr><strong>Colaboradores</strong></tr>
-                    <button mat-button><mat-icon>listicon</mat-icon> Listar</button> <br>
-                    <button mat-button><mat-icon>add</mat-icon> Adicionar</button><br>
-                    <button mat-button><mat-icon>update</mat-icon> Atualizar</button> <br>
-                    <button mat-button><mat-icon>remove</mat-icon> Remover</button> <br>
+            <mat-card class="card-functionalities" >
+                <div class="items-spaced">
+
+                    <div>
+                        <tr class="title-functionalities"><strong>Colaboradores</strong></tr>
+                        <button mat-button><mat-icon>listicon</mat-icon> Listar</button> <br>
+                        <button mat-button><mat-icon>add</mat-icon> Adicionar</button><br>
+                        <button mat-button><mat-icon>update</mat-icon> Atualizar</button> <br>
+                        <button mat-button><mat-icon>remove</mat-icon> Remover</button> <br>
+                    </div>
+
+                    <iframe class="frame-video" width="560" height="315"
+                        src="https://www.youtube.com/embed/O-n7hq1p2Vc?si=QE-5Uidt1JyiJzmn" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </mat-card>
+
+            <mat-card class="card-functionalities" >
+                <div class="items-spaced">
+                    <iframe class="frame-video" width="560" height="315"
+                        src="https://www.youtube.com/embed/qfQ4IBD7V3g?si=4Y-P5mveP13KEOZQ" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div>
+                        <tr class="title-functionalities"><strong>Registro de Ponto</strong></tr>
+                        <button mat-button><mat-icon>check</mat-icon> Registrar Entrada</button> <br>
+                        <button mat-button><mat-icon>done_all</mat-icon> Registrar Saída</button><br>
+                        <button mat-button><mat-icon>find_in_page</mat-icon> Verificar se já houve registro
+                            hoje</button>
+                        <br>
+                    </div>
                 </div>
 
-                <div>
-                    <tr><strong>Registro de Ponto</strong></tr>
-                    <button mat-button><mat-icon>check</mat-icon> Registrar Entrada</button> <br>
-                    <button mat-button><mat-icon>done_all</mat-icon> Registrar Saída</button><br>
-                    <button mat-button><mat-icon>find_in_page</mat-icon> Verificar se já houve registro hoje</button> <br>
+            </mat-card>
+
+            <mat-card class="card-functionalities" >
+
+                <div class="items-spaced">
+
+                    <div>
+                        <tr class="title-functionalities"><strong>Relatório</strong></tr>
+                        <button mat-button><mat-icon>search</mat-icon> Pesquisar por mês e ano</button> <br>
+                        <button mat-button><mat-icon>work</mat-icon> Visualizar o tempo total de trabalho</button><br>
+                        <button mat-button><mat-icon>timeline</mat-icon> Apresentação de um gráfico de horas
+                            totais</button>
+                        <br>
+                    </div>
+
+                    <iframe class="frame-video" width="560" height="315" src="https://www.youtube.com/embed/8iFdf3YnEgE?si=BuqZnZOYE-fPz7xg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+
                 </div>
 
-                <div>
-                    <tr><strong>Relatório</strong></tr>
-                    <button mat-button><mat-icon>search</mat-icon> Pesquisar por mês e ano</button> <br>
-                    <button mat-button><mat-icon>work</mat-icon> Visualizar o tempo total de trabalho</button><br>
-                    <button mat-button><mat-icon>timeline</mat-icon> Apresentação de um gráfico de horas totais</button> <br>
-                </div>
-
-            </div>
-
+            </mat-card>
 
         </div>
+
     </mat-card>
 </main>
