@@ -125,6 +125,7 @@ A estrutura de pastas utilizada foi simples, baseando-se no modelo padrão do an
     - package-lock.json
 
 Em que:
+
     - /providers contém funções de requisições http; 
     - /assets contém as imagens utilizadas no projeto;
     - /environments contém os arquivos que contém as variáveis de ambiente;
