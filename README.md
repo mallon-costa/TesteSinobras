@@ -103,7 +103,10 @@ Requisitos:
     - Angular CLI 17.3.1;
     - Node 20.10.0;
     - Package Manager Npm 10.2.3;
-    - PostegreSQL;
+    - PostegreSQL 16.2;
+
+Primeiramente, entre dentro do diretório /Database e execute o seguinte comando no terminal para criar seu banco de dados:
+psql -U postgres -d system_employee -f employee.sql
 
 Abra o diretório Webapi e localize o arquivo "ConnectionContext.cs" dentro de /Infrastructure, na linha 12 mude "Server=postgres;" para "Server=localhost".
 ![image](https://github.com/mallon-costa/TesteSinobras/assets/55391088/c37708f3-09f4-47ae-927e-7ad5f92774a2)
